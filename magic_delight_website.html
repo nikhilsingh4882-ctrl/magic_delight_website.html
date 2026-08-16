@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic Delight — Taste of Happiness</title>
+<style>
+:root{--bg:#fffaf5;--dark:#211914;--accent:#d86b2f;--gold:#e7a84b;--muted:#756b64;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--dark);line-height:1.6}
+nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(255,250,245,.94);backdrop-filter:blur(12px);border-bottom:1px solid #eee0d4}
+.nav-inner{max-width:1100px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:1.15rem}.logo span{color:var(--accent)}
+nav a{color:var(--dark);text-decoration:none;margin-left:22px;font-weight:600;font-size:.92rem}
+.hero{min-height:88vh;padding:145px 22px 80px;background:radial-gradient(circle at 85% 25%,#ffe1bd 0,transparent 32%),linear-gradient(135deg,#fff8ef,#f8e6d4);display:flex;align-items:center}
+.hero-inner{max-width:1100px;width:100%;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.badge{display:inline-block;background:#fff;border:1px solid #f0d5bd;border-radius:999px;padding:7px 13px;color:var(--accent);font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.95;letter-spacing:-.06em;margin-bottom:20px}
+h1 span{color:var(--accent)}
+.hero p{font-size:1.12rem;color:var(--muted);max-width:580px}
+.buttons{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:800;display:inline-block}
+.primary{background:var(--dark);color:white}.secondary{background:white;color:var(--dark);border:1px solid #ead8c8}
+.hero-card{min-height:390px;border-radius:28px;background:linear-gradient(145deg,#35231a,#9b4c29);box-shadow:0 25px 60px rgba(83,45,24,.22);display:flex;align-items:end;padding:28px;color:white;overflow:hidden;position:relative}
+.hero-card:before{content:"🍽️";position:absolute;font-size:10rem;opacity:.12;right:-5px;top:25px}
+.rating{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);padding:18px;border-radius:18px;width:100%;backdrop-filter:blur(8px)}
+.rating strong{font-size:2rem}.stars{color:#ffd36a}
+section{max-width:1100px;margin:auto;padding:80px 22px}
+.section-title{text-align:center;font-size:2.2rem;margin-bottom:12px}.section-sub{text-align:center;color:var(--muted);margin-bottom:38px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);padding:28px;border:1px solid #f0e2d7;border-radius:20px;box-shadow:0 8px 25px rgba(50,30,20,.05)}
+.icon{font-size:2rem;margin-bottom:10px}.card h3{margin-bottom:8px}.card p{color:var(--muted)}
+.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.menu-item{background:white;border:1px solid #eee1d6;border-radius:16px;padding:20px;display:flex;justify-content:space-between;gap:15px}
+.menu-item small{display:block;color:var(--muted);margin-top:3px}.price{font-weight:800;color:var(--accent);white-space:nowrap}
+.contact{background:#251a15;color:white;border-radius:28px;padding:42px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact p{color:#d8cbc3;margin:8px 0}.contact a{color:white}.reserve{background:var(--gold);color:#251a15;padding:13px 18px;border-radius:12px;text-decoration:none;font-weight:800;display:inline-block;margin-top:18px}
+footer{text-align:center;padding:28px;color:var(--muted);font-size:.9rem}
+@media(max-width:760px){.hero-inner,.contact{grid-template-columns:1fr}.hero-card{min-height:280px}.cards,.menu{grid-template-columns:1fr}nav .links{display:none}h1{font-size:3.5rem}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="logo">Magic <span>Delight</span></div>
+    <div class="links">
+      <a href="#about">About</a><a href="#menu">Menu</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="badge">✨ Taste of Happiness</div>
+      <h1>Magic <span>Delight</span></h1>
+      <p>A warm, casual dining destination at Netaji Subhash Place, Delhi — made for good food, good company and happy moments.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://www.google.com/maps/reserve/v/dine/c/hi01G_Jfx3U" target="_blank">Reserve a Table</a>
+        <a class="btn secondary" href="https://magicpin.in/New-Delhi/Netaji-Subhash-Place/Restaurant/Magic-Delight-Taste-Of-Happiness/store/6393a4/menu/" target="_blank">View Menu</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="rating">
+        <div class="stars">★★★★★</div>
+        <strong>4.7 / 5</strong>
+        <div>Based on 420 reviews</div>
+        <div style="margin-top:8px">₹200–400 per person</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="section-title">Why Magic Delight?</h2>
+  <p class="section-sub">Everything you need for a relaxed food experience.</p>
+  <div class="cards">
+    <div class="card"><div class="icon">🍴</div><h3>Dine-in</h3><p>Enjoy your meal comfortably at the restaurant.</p></div>
+    <div class="card"><div class="icon">🚗</div><h3>Drive-through</h3><p>A convenient option when you're on the move.</p></div>
+    <div class="card"><div class="icon">🛵</div><h3>Delivery</h3><p>Order online and enjoy your favourites at home.</p></div>
+  </div>
+</section>
+
+<section id="menu">
+  <h2 class="section-title">Menu Highlights</h2>
+  <p class="section-sub">Explore the menu before you visit.</p>
+  <div class="menu">
+    <div class="menu-item"><div><strong>Restaurant Menu</strong><small>View the latest available menu online</small></div><div class="price">₹200–400</div></div>
+    <div class="menu-item"><div><strong>Online Ordering</strong><small>Order through the available online service</small></div><div class="price">Order ↗</div></div>
+  </div>
+  <div style="text-align:center;margin-top:25px"><a class="btn primary" href="https://magicpin.in/New-Delhi/Netaji-Subhash-Place/Restaurant/Magic-Delight-Taste-Of-Happiness/store/6393a4/menu/" target="_blank">Open Full Menu</a></div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <div>
+      <h2>Visit Us</h2>
+      <p>G-55/58, Aggarwal Metro Heights,<br>Netaji Subhash Place, Pitampura,<br>New Delhi, Delhi 110034</p>
+      <p>📞 <a href="tel:08920496123">089204 96123</a></p>
+    </div>
+    <div>
+      <h2>Opening Hours</h2>
+      <p>Open until 11:30 PM (as currently listed).</p>
+      <a class="reserve" href="https://www.google.com/maps/reserve/v/dine/c/hi01G_Jfx3U" target="_blank">Reserve a Table →</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Magic Delight — Taste of Happiness</footer>
+</body>
+</html>
